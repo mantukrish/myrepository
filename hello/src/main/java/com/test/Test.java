@@ -3,6 +3,7 @@ package com.test;
 import java.util.Scanner;
 
 import javax.persistence.Query;
+import javax.sound.midi.Soundbank;
 
 import org.hibernate.Session;
 
@@ -11,6 +12,7 @@ import com.dao.Hibernate_Util;
 public class Test {
 
 	public static void main(String[] args) {
+		System.out.println("from main method");
 		final String HQL_QUERY = 
 				"FROM com.bo.Reg_BO rb WHERE  rb.username=:uname AND rb.password1=:pswd";
 			Scanner scn=new Scanner(System.in);
